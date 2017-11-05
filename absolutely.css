@@ -1,16 +1,201 @@
+*{
+	padding: 0;
+	margin: 0;
+}
 body {
 	text-align : center;
 	font-family : Tahoma;
 	font-size : 14px;
 	background-color : black;
-	/* toe te voegen */
+	
 }
-.all {
+.all{
 	text-align : left;
 	width : 700px;
 	margin : 100px auto;
 	min-height : 600px;
 	background-image : url(bg.jpg);
 	border : 4px solid red;
+	position: relative;
 }
+
+nav{
+	background-image: url(bar1.png);
+	height: 24px;
+}
+
+nav a{
+	color: white;
+	padding: 20px;
+	padding-top: 0px;
+	margin-bottom: 20px;
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+nav:hover{
+	background-image: url(bar2.png);
+	color: black;
+	font-weight: bold;
+}
+
+nav:hover a{
+	color: black;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+#toolbox{
+	position: absolute;
+	right: 225px;
+	top: 165px;
+	z-index: 1;
+}
+
+#toolbox:hover{
+	top: 215px;
+	top: 155px;
+}
+
+#title{
+	position: absolute;
+	top: -50px;
+	left: 30px;
+	z-index: 1;
+}
+
+#title:hover{
+	top: -60px;
+	left: 20px;
+}
+
+#saw{
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	z-index: 1;
+}
+
+#saw:hover{
+	top: 40px;
+	left: -60px;
+}
+
+#hammer{
+	position: absolute;
+	top: -100px;
+	right: 80px;
+	z-index: 1;
+}
+
+#hammer:hover{
+	top: -110px;
+	right: 70px;
+}
+
+#screwdriver{
+	position: absolute;
+	left: 550px;
+	top: 90px;
+	z-index: 1;
+}
+
+#screwdriver:hover{
+	top: 80px;
+	left: 540px;
+}
+
+#pincers{
+	position: absolute;
+	left: 550px;
+	top: 210px;
+	z-index: 1;
+}
+
+#pincers:hover{
+	top: 200px;
+	left: 540px;
+}
+
+#toolbox ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 199;
+}
+
+.text{
+	margin-top: 350px;
+	background-color: rgba(255,255,255,0.5);
+    
+    z-index: 199; 
+}
+
+#toolbox ul{
+  display: none;
+  margin-top: 100px;
+}
+
+#toolbox:hover ul{
+	display: block;
+}
+
+ul li{
+   list-style-type: none;
+   border: solid black 1px;
+   height: 25px;
+   padding-left: 7px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: black;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 20px;
+}
+
+ul{
+	height: 107px;
+	width: 100px;
+	padding-left: 0px;
+}
+
+ul li:hover{
+	background-color: #ffff80;
+}
+
+#humanfactor{
+	color: blue;
+	position: relative;
+
+}
+
+
+
+#humanfactor2{
+	display: none;
+	position: absolute;
+	height: 55px;
+	width: 210px;
+	z-index: 10;
+	background-color: white;
+	top: 15px;
+	left: 0;
+	border: 2px solid blue;
+	border-radius: 10px;
+	padding: 5px;
+
+}
+
+#humanfactor:hover #humanfactor2 {
+    display: block;
+}
+
+
+
+
+
+
 
